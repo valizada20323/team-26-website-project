@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<!-- 
+    SITE 1101 Principles of Information Systems 
+    (c)202X by Name Surname 
+    Submitted in partial fulfillment of the requirements of the course.
+-->
+<html>
+    <head>
+        <title>WebNinjas</title>
+        <link rel="icon" href="/media/teamlogo-modified.png" type="image/png">
+        <link rel="stylesheet" href="styles.css">  
+        <script type="text/javascript" src="scripts.js"></script>      
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+
+            <header class="site-header">
+                <div class="logo-container">
+                  <img src="/media/teamlogo-modified.png" alt="Team Logo" class="team-logo">
+                  <h1 class="team-name">WebNinjas</h1>
+                </div>
+                <nav class="navigation">
+                  <ul>
+                    <li><a href="#team-members-section">Team Members</a></li>
+                    <li><a href="#hour-of-code-section">Hour of Code</a></li>
+                    <li><a href="#website-project-sectoin">Website Project</a></li>
+                    <li><a href="code-artist.html" target="_blank">Code Artist</a></li>
+                  </ul>
+                </nav>
+              </header>
+              
+              <div class="image-container">
+                <div class="custom-background">
+                    <div class="text-overlay">
+                        <h2>Hello, everyone! We are Team 26, nicknamed as WebNinjas.</h2>
+                        <p>Happy to see you here! By discovering this website, you will see our web developing skills and learn more about us.</p>
+                    </div>
+                </div>
+            </div>
+            
+
+          <section id="team-members-section">
+            <div class="team-section">
+              <h1 class="section-title">Team Members</h1>
+              <div class="team-cards">
+            
+                <div class="card">
+                  <img src="/media/members/gurbangurbanov.jpg" alt="Gurban Gurbanov" class="profile-photo">
+                  <h2 class="member-name">Gurban Gurbanov</h2>
+                </div>
+            
+                
+                <div class="card">
+                  <img src="/media/members/nurlankaribov.jpg" alt="Nurlan Karibov" class="profile-photo">
+                  <h2 class="member-name">Nurlan Karibov</h2>
+                </div>
+            
+               
+                <div class="card">
+                  <img src="/media/members/vagifalizada.jpg" alt="Vagif Alizada" class="profile-photo">
+                  <h2 class="member-name">Vagif Alizada</h2>
+                </div>
+            
+                
+                <div class="card">
+                  <img src="/media/members/alijafarzada.JPG" alt="Ali Jafarzada" class="profile-photo">
+                  <h2 class="member-name">Ali Jafarzada</h2>
+                </div>
+              </div>
+            
+              
+              <div class="about-us">
+                <a href="team-members.html" target="_blank" class="see-more-button">See More About Us</a>
+              </div>
+            </div>            
+          </section>
+
+          <section id="hour-of-code-section">
+            <div class="hour-of-code-section">
+            
+              <h1 class="section-title">Hour of Code</h1>
+            
+             
+              <div class="loop">
+                <img src="/media/course.jpg" alt="Hour of Code Image" class="loop-image" id="current-image">
+              </div>
+            
+              
+              <div class="more-info">
+                <a href="hour-of-code.html" target="_blank" class="more-button">More about "Hour of Code"</a>
+              </div>
+           
+            </div>
+          </section>
+              
+
+          <section id="website-project-sectoin">
+            <div class="website-project-section">
+           
+              <h1 class="section-title">Website Project</h1>
+            
+              
+              <div class="project-description">
+                <p>
+                  This website was developed as a group assignment for the “Principles of Information Systems” course at ADA University 2024.
+                </p>
+
+                <p>
+                  The website includes multiple sections such as our team members, Hour of Code event details and so on. 
+                  We also integrated interactive features, ensuring that visitors have an engaging experience.
+                </p>
+              </div>
+            
+             
+              <div class="more-info">
+                <a href="web-project.html" target="_blank" class="more-button">More about Website project</a>
+              </div>
+            </div>
+            
+          </section>
+          
+          <button id="backToTop" onclick="scrollToTop()" style="display:none; position: fixed; 
+          bottom: 20px; right: 20px;
+           background-color: #336178; 
+           color: white; border: none;
+            padding: 10px 15px; border-radius: 5px;">up</button>
+
+          <footer class="footer">
+            <div class="footer-logo">
+                <img src="/media/ada_logo_color.png" alt="Website Logo">
+            </div>
+            <p class="footer-text">
+                &copy; 2024 Website Project | All Rights Reserved
+            </p>
+        </footer>
+
+
+        <script>
+              window.onload = function() {
+              alert("Welcome to WebNinjas!");
+              };
+
+
+              // go up button
+              window.onscroll = function() {
+                  const button = document.getElementById("backToTop");
+                  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                      button.style.display = "block";
+                  } else {
+                      button.style.display = "none";
+                  }
+              };
+
+              function scrollToTop() {
+                  window.scrollTo({ top: 0, behavior: 'smooth' });
+              }
+        </script>
+    </body>
+</html>
